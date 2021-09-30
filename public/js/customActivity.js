@@ -6,6 +6,7 @@ define([
     'use strict';
 
     var connection = new Postmonger.Session();
+    var authTokens = {};    ///////added..............................
     var payload = {};
     var lastStepEnabled = false;
     var steps = [ // initialize to the same value as what's set in config.json for consistency
@@ -80,7 +81,7 @@ define([
     function onGetTokens (tokens) {
         // Response: tokens = { token: <legacy token>, fuel2token: <fuel api token> }
         console.log("Tokens function: "+JSON.stringify(tokens));
-        //authTokens = tokens;
+        authTokens = tokens; //uncommented 84...................................................
     }
 
     function onGetEndpoints (endpoints) {
