@@ -86,7 +86,7 @@ define([
     }
 
     function onGetEndpoints (endpoints) {
-        Response: endpoints = { restHost: 'https://mc6vgk-sxj9p08pqwxqz9hw9-4my.rest.marketingcloudapis.com/' } //i.e. "rest.s1.qa1.exacttarget.com"
+        //Response: endpoints = { restHost: <url> } i.e. "rest.s1.qa1.exacttarget.com"
         console.log("Get End Points function: "+JSON.stringify(endpoints));
     }
 
