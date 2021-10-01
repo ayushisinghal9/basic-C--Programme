@@ -1,3 +1,4 @@
+console.log("customactivity.js");
 define([
     'postmonger'
 ], function(
@@ -85,7 +86,7 @@ define([
     }
 
     function onGetEndpoints (endpoints) {
-        // Response: endpoints = { restHost: <url> } i.e. "rest.s1.qa1.exacttarget.com"
+        Response: endpoints = { restHost: rest.s1.qa1.exacttarget.com }
         console.log("Get End Points function: "+JSON.stringify(endpoints));
     }
 
