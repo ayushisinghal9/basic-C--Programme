@@ -1,3 +1,4 @@
+console.log("jwtDecoder.js");
 const JWT = require('jsonwebtoken');
 
 module.exports = (body) => {

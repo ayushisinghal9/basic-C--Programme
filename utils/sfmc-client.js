@@ -1,3 +1,4 @@
+console.log("SFMC-client.js");
 const FuelRest = require('fuel-rest');
 
 const options = {
