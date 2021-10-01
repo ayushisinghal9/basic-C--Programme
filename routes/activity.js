@@ -1,3 +1,4 @@
+console.log("activity.js");
 'use strict';
 var util = require('util');
 
