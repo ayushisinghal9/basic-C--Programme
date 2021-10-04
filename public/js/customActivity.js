@@ -7,7 +7,7 @@ define([
     'use strict';
 
     var connection = new Postmonger.Session();
-    var authTokens = {};    ///////added..............................
+    //var authTokens = {};    ///////added..............................
     var payload = {};
     var lastStepEnabled = false;
     var steps = [ // initialize to the same value as what's set in config.json for consistency
@@ -22,8 +22,8 @@ define([
     connection.on('requestedEndpoints', onGetEndpoints);
 
     connection.on('clickedNext', save);
-    connection.on('clickedBack', onClickedBack);
-    connection.on('gotoStep', onGotoStep);
+    //connection.on('clickedBack', onClickedBack);
+    //connection.on('gotoStep', onGotoStep);
 
     function onRender() {
         // JB will respond the first time 'ready' is called with 'initActivity'
@@ -82,7 +82,7 @@ define([
     function onGetTokens (tokens) {
         // Response: tokens = { token: <legacy token>, fuel2token: <fuel api token> }
         console.log("Tokens function: "+JSON.stringify(tokens));
-        authTokens = tokens; //uncommented 84...................................................
+        //authTokens = tokens; //uncommented 84...................................................
     }
 
     function onGetEndpoints (endpoints) {
